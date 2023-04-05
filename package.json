@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "pnpm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d public"
   },
   "homepage": "https://hibikine.github.io/return-escape/",
   "dependencies": {

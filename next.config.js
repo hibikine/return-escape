@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  assetPrefix: '/return-escape/',
-  publicRuntimeConfig: {
-    basePath: '/return-escape',
-  },
+  basePath: '/return-escape',
   reactStrictMode: true,
+  output: 'export',
+  distDir: 'dist',
 };
 
 module.exports = nextConfig;

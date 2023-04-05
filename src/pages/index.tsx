@@ -1,6 +1,5 @@
 import { ChangeEvent, useState } from 'react';
 import Head from 'next/head';
-import styles from '@/styles/Home.module.css';
 
 const convert = (text: string) => {
   return text.replace(/(\r\n|\r|\n)/g, '\\n');
@@ -22,17 +21,22 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main>
         <form>
           <label>
             Input Text:
-            <textarea value={inputText} onChange={handleInputChange} />
+            <textarea
+              cols={100}
+              rows={30}
+              value={inputText}
+              onChange={handleInputChange}
+            />
           </label>
         </form>
         <form>
           <label>
             Output Text:
-            <textarea readOnly value={outputText} />
+            <textarea cols={100} rows={30} readOnly value={outputText} />
           </label>
         </form>
       </main>

@@ -1,5 +1,5 @@
 const isProduction = process.env.NODE_ENV === 'production';
-const prefixPath = !isProduction ? '/return-escape' : '';
+const prefixPath = isProduction ? '/return-escape' : '';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
